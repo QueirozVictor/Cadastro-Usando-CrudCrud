@@ -20,7 +20,7 @@ fetch("https://crudcrud.com/api/f0e765bee3324a7ebfb31433fb0f29a3/user")
         const nome = document.getElementById("nome");
         const email = document.getElementById("email");
 
-        fetch("https://crudcrud.com/api/f0e765bee3324a7ebfb31433fb0f29a3/users", {
+        fetch("https://crudcrud.com/api/f0e765bee3324a7ebfb31433fb0f29a3/user", {
 
             method: "POST",
             headers: {
@@ -45,7 +45,7 @@ fetch("https://crudcrud.com/api/f0e765bee3324a7ebfb31433fb0f29a3/user")
     function apagar(_id, botao) {
 
         //Requisição de DELETE ao servidor
-        fetch(`https://crudcrud.com/api/f0e765bee3324a7ebfb31433fb0f29a3/users/${_id}`, {
+        fetch(`https://crudcrud.com/api/f0e765bee3324a7ebfb31433fb0f29a3/user/${_id}`, {
             method: "DELETE"
         })
         .then(resposta => {
