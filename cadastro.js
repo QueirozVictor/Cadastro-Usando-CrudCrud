@@ -2,7 +2,7 @@
 // Analisa o <ul>
 const item = document.getElementById("novo");
 // Lonk do Servidor
-fetch("https://crudcrud.com/api/aea007be49ba4dc39f05d6171a5086c6/users")
+fetch("https://crudcrud.com/api/f0e765bee3324a7ebfb31433fb0f29a3/user")
     // Verifica se existe algo la
     .then(resposta => resposta.json())
     // Se a resposta do servidor for positiva e conter infromações, ele cria um elemento <li> com as informações recebidas atravez do JSON
@@ -20,7 +20,7 @@ fetch("https://crudcrud.com/api/aea007be49ba4dc39f05d6171a5086c6/users")
         const nome = document.getElementById("nome");
         const email = document.getElementById("email");
 
-        fetch("https://crudcrud.com/api/aea007be49ba4dc39f05d6171a5086c6/users", {
+        fetch("https://crudcrud.com/api/f0e765bee3324a7ebfb31433fb0f29a3/users", {
 
             method: "POST",
             headers: {
@@ -45,7 +45,7 @@ fetch("https://crudcrud.com/api/aea007be49ba4dc39f05d6171a5086c6/users")
     function apagar(_id, botao) {
 
         //Requisição de DELETE ao servidor
-        fetch(`https://crudcrud.com/api/aea007be49ba4dc39f05d6171a5086c6/users/${_id}`, {
+        fetch(`https://crudcrud.com/api/f0e765bee3324a7ebfb31433fb0f29a3/users/${_id}`, {
             method: "DELETE"
         })
         .then(resposta => {
